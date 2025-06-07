@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como se Tornar Piloto de Avião do Zero | Alto Flight</title>
+    <style>
+        /* Reset e estilos base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #FFFFFF;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Cores da marca */
+        :root {
+            --primary: #0066CC;
+            --secondary: #003366;
+            --accent: #FFD700;
+            --light: #FFFFFF;
+            --light-gray: #F5F5F5;
+            --medium-gray: #CCCCCC;
+            --dark-text: #333333;
+        }
+        
+        /* Tipografia */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        /* Botões */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--accent);
+            color: var(--secondary);
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background-color: #e6c200;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .btn-large {
+            padding: 16px 40px;
+            font-size: 1.1rem;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--light);
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            max-width: 180px;
+            height: auto;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--light);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 40px;
+        }
+        
+        .hero-text h1 {
+            color: var(--light);
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        /* Seções */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section:nth-child(even) {
+            background-color: var(--light-gray);
+        }
+        
+        /* Sobre o Ebook */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        
+        .feature {
+            flex-basis: calc(50% - 20px);
+            margin-bottom: 30px;
+            background-color: var(--light);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        
+        .feature h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        /* Depoimentos */
+        .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .testimonial {
+            flex-basis: calc(33.333% - 20px);
+            margin-bottom: 30px;
+            background-color: var(--light);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        
+        .testimonial:before {
+            content: '"';
+            font-size: 5rem;
+            color: var(--primary);
+            opacity: 0.2;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            line-height: 1;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        /* FAQ */
+        .faq-item {
+            margin-bottom: 20px;
+            background-color: var(--light);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        
+        .faq-question {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        /* Formulário */
+        .form-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--light);
+        }
+        
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: var(--light);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .form-container h2 {
+            color: var(--secondary);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: var(--dark-text);
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--medium-gray);
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .form-privacy {
+            font-size: 0.9rem;
+            margin-top: 20px;
+            text-align: center;
+            color: var(--dark-text);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: var(--light);
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            margin-top: 20px;
+        }
+        
+        .footer-links a {
+            color: var(--light);
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hero-content {
+                flex-direction: column;
+            }
+            
+            .hero-text {
+                padding-right: 0;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            
+            .feature {
+                flex-basis: 100%;
+            }
+            
+            .testimonial {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img src="images/logo.png" alt="Alto Flight Logo" class="logo">
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>DECOLE SUA CARREIRA COMO PILOTO DE AVIÃO</h1>
+                <p>Descubra o passo a passo completo para se tornar um piloto profissional, mesmo começando do zero</p>
+                <a href="#form" class="btn btn-large">QUERO INICIAR MINHA CARREIRA NOS CÉUS</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/capa-ebook.png" alt="Ebook Como se Tornar Piloto de Avião do Zero">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre o Ebook -->
+    <section class="section">
+        <div class="container">
+            <h2>O GUIA DEFINITIVO PARA FUTUROS PILOTOS</h2>
+            <p>Este ebook foi criado especialmente para quem sonha em se tornar piloto de avião, mas não sabe por onde começar. Com informações detalhadas e práticas, você terá acesso a todo o conhecimento necessário para iniciar sua jornada nos céus com confiança e clareza.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <h3>Primeiros Passos</h3>
+                    <p>Descubra exatamente o que você precisa fazer para iniciar sua formação como piloto</p>
+                </div>
+                <div class="feature">
+                    <h3>Detalhes do Curso</h3>
+                    <p>Entenda como funciona a formação, desde as aulas teóricas até as horas de voo</p>
+                </div>
+                <div class="feature">
+                    <h3>Investimento Necessário</h3>
+                    <p>Conheça os custos reais envolvidos na formação e certificação</p>
+                </div>
+                <div class="feature">
+                    <h3>Desafios e Soluções</h3>
+                    <p>Saiba quais são os principais obstáculos e como superá-los</p>
+                </div>
+                <div class="feature">
+                    <h3>Oportunidades de Mercado</h3>
+                    <p>Explore as diversas possibilidades de carreira para pilotos no Brasil e no exterior</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Autor -->
+    <section class="section">
+        <div class="container">
+            <h2>QUEM ESTÁ POR TRÁS DESTE CONTEÚDO</h2>
+            <p>A Alto Flight é uma referência no treinamento e formação de pilotos no Brasil. Com anos de experiência no mercado de aviação, nossa equipe reúne instrutores e pilotos experientes que conhecem profundamente os desafios e oportunidades desta carreira fascinante.</p>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="section">
+        <div class="container">
+            <h2>O QUE DIZEM NOSSOS ALUNOS</h2>
+            
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p class="testimonial-text">Graças ao ebook da Alto Flight, consegui entender claramente todos os passos para me tornar piloto. Hoje estou concluindo minha formação e realizando meu sonho!</p>
+                    <p class="testimonial-author">Carlos M.</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">As informações sobre custos e mercado de trabalho foram fundamentais para eu planejar minha carreira. Recomendo a todos que sonham em voar profissionalmente.</p>
+                    <p class="testimonial-author">Fernanda L.</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">O conteúdo é completo e esclarecedor. Tirou todas as minhas dúvidas e me deu confiança para iniciar minha formação como piloto.</p>
+                    <p class="testimonial-author">Rafael S.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+        <div class="container">
+            <h2>PERGUNTAS FREQUENTES</h2>
+            
+            <div class="faq-item">
+                <p class="faq-question">Preciso ter algum conhecimento prévio para me tornar piloto?</p>
+                <p>Não! O ebook foi desenvolvido justamente para quem está começando do zero e explica todos os passos iniciais.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">Qual a idade mínima para iniciar a formação como piloto?</p>
+                <p>No Brasil, é possível iniciar os estudos teóricos a qualquer momento, mas para obter a licença de piloto privado é necessário ter 17 anos completos.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">Quanto tempo leva para se formar como piloto comercial?</p>
+                <p>O tempo varia conforme a disponibilidade do aluno, mas em média leva de 18 a 24 meses para completar toda a formação.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">O ebook aborda os custos reais da formação?</p>
+                <p>Sim! Um dos capítulos é dedicado exclusivamente aos investimentos necessários, com valores atualizados e dicas para otimizar seus recursos.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">Como receberei o ebook após o cadastro?</p>
+                <p>Imediatamente após preencher o formulário, você receberá um email com o link para download do seu ebook.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário -->
+    <section id="form" class="section form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2>COMECE SUA JORNADA NOS CÉUS AGORA MESMO</h2>
+                <p>Preencha o formulário abaixo e receba gratuitamente o ebook "Como se Tornar Piloto de Avião do Zero"</p>
+                
+                <form id="ebook-form">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu melhor e-mail" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-large">RECEBER MEU EBOOK</button>
+                </form>
+                
+                <p class="form-privacy">Seus dados estão 100% seguros. Não compartilhamos suas informações com terceiros e você pode cancelar sua inscrição a qualquer momento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Alto Flight - Todos os direitos reservados</p>
+            
+            <div class="footer-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para o formulário -->
+    <script>
+        document.getElementById('ebook-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Aqui você adicionaria o código para enviar os dados do formulário
+            // Como é apenas uma demonstração, vamos simular um envio bem-sucedido
+            
+            const name = document.getElementById('name').value;
+            alert('Obrigado, ' + name + '! Seu ebook foi enviado para o e-mail cadastrado.');
+            
+            // Limpar o formulário
+            this.reset();
+        });
+    </script>
+</body>
+</html>
+

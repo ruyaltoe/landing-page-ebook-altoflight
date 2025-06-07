@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe - Landing Page Ebook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .section {
+            padding: 60px 0;
+            border: 1px dashed #ccc;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .hero {
+            background-color: #f5f5f5;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+        }
+        .hero-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .hero-text {
+            flex: 1;
+            text-align: left;
+            padding-right: 40px;
+        }
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+        .mockup-placeholder {
+            width: 300px;
+            height: 400px;
+            background-color: #ddd;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-section {
+            background-color: #f9f9f9;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #eee;
+            background-color: white;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Seção Hero -->
+    <section class="section hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>[TÍTULO CHAMATIVO DO EBOOK]</h1>
+                <p>[Subtítulo com proposta de valor]</p>
+                <a href="#form" class="btn">QUERO MEU EBOOK</a>
+            </div>
+            <div class="hero-image">
+                <div class="mockup-placeholder">
+                    [MOCKUP 3D DO EBOOK]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre o Ebook -->
+    <section class="section">
+        <div class="container">
+            <h2>Sobre o Ebook</h2>
+            <p>[Descrição do conteúdo]</p>
+            <div>
+                <h3>O que você vai encontrar:</h3>
+                <p>[Lista de tópicos/benefícios]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Autor -->
+    <section class="section">
+        <div class="container">
+            <h2>Sobre o Autor</h2>
+            <p>[Biografia e credenciais]</p>
+        </div>
+    </section>
+
+    <!-- Seção Depoimentos -->
+    <section class="section">
+        <div class="container">
+            <h2>O que estão dizendo</h2>
+            <div>[Depoimentos]</div>
+        </div>
+    </section>
+
+    <!-- Seção FAQ -->
+    <section class="section">
+        <div class="container">
+            <h2>Perguntas Frequentes</h2>
+            <div>[Lista de perguntas e respostas]</div>
+        </div>
+    </section>
+
+    <!-- Seção Formulário -->
+    <section id="form" class="section form-section">
+        <div class="container">
+            <h2>Garanta seu Ebook Agora</h2>
+            <div class="form-container">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" placeholder="Seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Seu melhor email">
+                    </div>
+                    <button type="submit" class="btn">RECEBER MEU EBOOK</button>
+                </form>
+                <p><small>Seus dados estão seguros conosco. Não compartilhamos suas informações.</small></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 - Todos os direitos reservados</p>
+            <p>[Links para redes sociais e contato]</p>
+        </div>
+    </footer>
+</body>
+</html>
+
