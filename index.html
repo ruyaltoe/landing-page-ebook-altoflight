@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Como se Tornar Piloto de Avião do Zero | Alto Flight</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Como se Tornar Piloto de Avião do Zero | Alto Flight</title>
+<style>
         /* Reset e estilos base */
         * {
             margin: 0;
@@ -59,27 +60,31 @@
         }
         
         /* Botões */
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: var(--accent);
-            color: var(--secondary);
-            text-decoration: none;
-            border: none;
-            border-radius: 4px;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-align: center;
-        }
         
-        .btn:hover {
-            background-color: #e6c200;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
+.btn {
+    display: block;
+    padding: 14px 0;
+    background-color: var(--accent);
+    color: var(--secondary);
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background-color: #e6c200;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
         
         .btn-large {
             padding: 16px 40px;
@@ -273,30 +278,37 @@
             color: var(--dark-text);
         }
         
-        /* Footer */
-        footer {
-            background-color: var(--secondary);
-            color: var(--light);
-            padding: 40px 0;
-            text-align: center;
-        }
         
-        .footer-links {
-            margin-top: 20px;
-        }
-        
-        .footer-links a {
-            color: var(--light);
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-        
-        /* Responsividade */
-        @media (max-width: 768px) {
+/* Footer */
+footer {
+    background-color: var(--secondary);
+    color: var(--light);
+    padding: 20px 0; /* Reduzido de 40px */
+    text-align: center;
+}
+
+.footer-links {
+    margin-top: 10px; /* Reduzido de 20px */
+}
+
+.footer-links p {
+    margin: 6px 0;
+    line-height: 1.4;
+}
+
+.footer-links a {
+    color: var(--light);
+    margin: 0 8px;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
             .hero-content {
                 flex-direction: column;
             }
@@ -367,166 +379,123 @@
 </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <img src="images/logo.png" alt="Alto Flight Logo" class="logo">
-        </div>
-    </header>
+<!-- Header -->
+<header>
+<div class="container">
+<img alt="Alto Flight Logo" class="logo" src="images/logo.png"/>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero">
+<div class="container hero-content">
+<div class="hero-text">
+<h1>DECOLE SUA CARREIRA COMO PILOTO DE AVIÃO</h1>
+<p>Descubra o passo a passo completo para se tornar um piloto profissional, mesmo começando do zero</p>
+<a class="btn btn-large" href="#form">QUERO INICIAR MINHA CARREIRA NOS CÉUS</a>
+</div>
+<div class="hero-image">
+<img alt="Ebook Como se Tornar Piloto de Avião do Zero" src="images/IMG_4463.png"/>
+</div>
+</div>
+</section>
+<!-- Sobre o Ebook -->
+<section class="section">
+<div class="container">
+<h2>O GUIA DEFINITIVO PARA FUTUROS PILOTOS</h2>
+<p>Este ebook foi criado especialmente para quem sonha em se tornar piloto de avião, mas não sabe por onde começar. Com informações detalhadas e práticas, você terá acesso a todo o conhecimento necessário para iniciar sua jornada nos céus com confiança e clareza.</p>
+<div class="features">
+<div class="feature">
+<h3>Primeiros Passos</h3>
+<p>Descubra exatamente o que você precisa fazer para iniciar sua formação como piloto</p>
+</div>
+<div class="feature">
+<h3>Detalhes do Curso</h3>
+<p>Entenda como funciona a formação, desde as aulas teóricas até as horas de voo</p>
+</div>
+<div class="feature">
+<h3>Investimento Necessário</h3>
+<p>Conheça os custos reais envolvidos na formação e certificação</p>
+</div>
+<div class="feature">
+<h3>Desafios e Soluções</h3>
+<p>Saiba quais são os principais obstáculos e como superá-los</p>
+</div>
+<div class="feature">
+<h3>Oportunidades de Mercado</h3>
+<p>Explore as diversas possibilidades de carreira para pilotos no Brasil</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Autor -->
+<section class="section">
+<div class="container">
+<h2>QUEM ESTÁ POR TRÁS DESTE CONTEÚDO</h2>
+<p>A Alto Flight é uma referência no treinamento e formação de pilotos no Brasil. Com anos de experiência no mercado de aviação, nossa equipe reúne instrutores e pilotos experientes que conhecem profundamente os desafios e oportunidades desta carreira fascinante.</p>
+</div>
+</section>
+<!-- Depoimentos -->
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1>DECOLE SUA CARREIRA COMO PILOTO DE AVIÃO</h1>
-                <p>Descubra o passo a passo completo para se tornar um piloto profissional, mesmo começando do zero</p>
-                <a href="#form" class="btn btn-large">QUERO INICIAR MINHA CARREIRA NOS CÉUS</a>
-            </div>
-            <div class="hero-image">
-                <img src="images/IMG_4463.png" alt="Ebook Como se Tornar Piloto de Avião do Zero">
-            </div>
-        </div>
-    </section>
-
-    <!-- Sobre o Ebook -->
-    <section class="section">
-        <div class="container">
-            <h2>O GUIA DEFINITIVO PARA FUTUROS PILOTOS</h2>
-            <p>Este ebook foi criado especialmente para quem sonha em se tornar piloto de avião, mas não sabe por onde começar. Com informações detalhadas e práticas, você terá acesso a todo o conhecimento necessário para iniciar sua jornada nos céus com confiança e clareza.</p>
-            
-            <div class="features">
-                <div class="feature">
-                    <h3>Primeiros Passos</h3>
-                    <p>Descubra exatamente o que você precisa fazer para iniciar sua formação como piloto</p>
-                </div>
-                <div class="feature">
-                    <h3>Detalhes do Curso</h3>
-                    <p>Entenda como funciona a formação, desde as aulas teóricas até as horas de voo</p>
-                </div>
-                <div class="feature">
-                    <h3>Investimento Necessário</h3>
-                    <p>Conheça os custos reais envolvidos na formação e certificação</p>
-                </div>
-                <div class="feature">
-                    <h3>Desafios e Soluções</h3>
-                    <p>Saiba quais são os principais obstáculos e como superá-los</p>
-                </div>
-                <div class="feature">
-                    <h3>Oportunidades de Mercado</h3>
-                    <p>Explore as diversas possibilidades de carreira para pilotos no Brasil</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Autor -->
-    <section class="section">
-        <div class="container">
-            <h2>QUEM ESTÁ POR TRÁS DESTE CONTEÚDO</h2>
-            <p>A Alto Flight é uma referência no treinamento e formação de pilotos no Brasil. Com anos de experiência no mercado de aviação, nossa equipe reúne instrutores e pilotos experientes que conhecem profundamente os desafios e oportunidades desta carreira fascinante.</p>
-        </div>
-    </section>
-
-    <!-- Depoimentos -->
-    <section class="section">
-        <div class="container">
-            <h2>O QUE DIZEM NOSSOS ALUNOS</h2>
-            
-            <div class="testimonials">
-                <div class="testimonial">
-                    <p class="testimonial-text">Graças ao ebook da Alto Flight, consegui entender claramente todos os passos para me tornar piloto. Hoje estou concluindo minha formação e realizando meu sonho!</p>
-                    <p class="testimonial-author">Carlos M.</p>
-                </div>
-                <div class="testimonial">
-                    <p class="testimonial-text">As informações sobre custos e mercado de trabalho foram fundamentais para eu planejar minha carreira. Recomendo a todos que sonham em voar profissionalmente.</p>
-                    <p class="testimonial-author">Fernanda L.</p>
-                </div>
-                <div class="testimonial">
-                    <p class="testimonial-text">O conteúdo é completo e esclarecedor. Tirou todas as minhas dúvidas e me deu confiança para iniciar minha formação como piloto.</p>
-                    <p class="testimonial-author">Rafael S.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section">
-        <div class="container">
-            <h2>PERGUNTAS FREQUENTES</h2>
-            
-            <div class="faq-item">
-                <p class="faq-question">Preciso ter algum conhecimento prévio para me tornar piloto?</p>
-                <p>Não! O ebook foi desenvolvido justamente para quem está começando do zero e explica todos os passos iniciais.</p>
-            </div>
-            
-            <div class="faq-item">
-                <p class="faq-question">Qual a idade mínima para iniciar a formação como piloto?</p>
-                <p>No Brasil, é possível iniciar os estudos teóricos a qualquer momento, mas para obter a licença de piloto privado é necessário ter 17 anos completos.</p>
-            </div>
-            
-            <div class="faq-item">
-                <p class="faq-question">Quanto tempo leva para se formar como piloto comercial?</p>
-                <p>O tempo varia conforme a disponibilidade do aluno, mas em média leva de 18 a 24 meses para completar toda a formação.</p>
-            </div>
-            
-            <div class="faq-item">
-                <p class="faq-question">O ebook aborda os custos reais da formação?</p>
-                <p>Sim! Um dos capítulos é dedicado exclusivamente aos investimentos necessários, com valores atualizados.</p>
-            </div>
-            
-            <div class="faq-item">
-                <p class="faq-question">Como receberei o ebook após o cadastro?</p>
-                <p>Imediatamente após preencher o formulário, você receberá um email com o link para download do seu ebook.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Formulário -->
-    <section id="form" class="section form-section">
-        <div class="container">
-            <div class="form-container">
-                <h2>COMECE SUA JORNADA NOS CÉUS AGORA MESMO</h2>
-                <p>Preencha o formulário abaixo e receba gratuitamente o ebook "Como se Tornar Piloto de Avião do Zero"</p>
-                
-                <form id="ebook-form">
-                    <div class="form-group">
-                        <label for="name">Nome Completo</label>
-                        <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" placeholder="Digite seu melhor e-mail" required>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-large">RECEBER MEU EBOOK</button>
-                </form>
-                
-                <p class="form-privacy">Seus dados estão 100% seguros. Não compartilhamos suas informações com terceiros e você pode cancelar sua inscrição a qualquer momento.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>© 2025 Alto Flight - Todos os direitos reservados</p>
-            
-            <div class="footer-links">
-                <footer>
-                  <p>
-                    <a href="politica.html" target="_blank">Política de Privacidade</a> |
-                    <a href="termos.html" target="_blank">Termos de Uso</a>
-                  </p>
-                </footer>
-                
-                <a href="#">Contato</a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Script para o formulário -->
-    <script>
+<!-- FAQ -->
+<section class="section">
+<div class="container">
+<h2>PERGUNTAS FREQUENTES</h2>
+<div class="faq-item">
+<p class="faq-question">Preciso ter algum conhecimento prévio para me tornar piloto?</p>
+<p>Não! O ebook foi desenvolvido justamente para quem está começando do zero e explica todos os passos iniciais.</p>
+</div>
+<div class="faq-item">
+<p class="faq-question">Qual a idade mínima para iniciar a formação como piloto?</p>
+<p>No Brasil, é possível iniciar os estudos teóricos a qualquer momento, mas para obter a licença de piloto privado é necessário ter 17 anos completos.</p>
+</div>
+<div class="faq-item">
+<p class="faq-question">Quanto tempo leva para se formar como piloto comercial?</p>
+<p>O tempo varia conforme a disponibilidade do aluno, mas em média leva de 18 a 24 meses para completar toda a formação.</p>
+</div>
+<div class="faq-item">
+<p class="faq-question">O ebook aborda os custos reais da formação?</p>
+<p>Sim! Um dos capítulos é dedicado exclusivamente aos investimentos necessários, com valores atualizados.</p>
+</div>
+<div class="faq-item">
+<p class="faq-question">Como receberei o ebook após o cadastro?</p>
+<p>Imediatamente após preencher o formulário, você receberá um email com o link para download do seu ebook.</p>
+</div>
+</div>
+</section>
+<!-- Formulário -->
+<section class="section form-section" id="form">
+<div class="container">
+<div class="form-container">
+<h2>COMECE SUA JORNADA NOS CÉUS AGORA MESMO</h2>
+<p>Preencha o formulário abaixo e receba gratuitamente o ebook "Como se Tornar Piloto de Avião do Zero"</p>
+<form id="ebook-form">
+<div class="form-group">
+<label for="name">Nome Completo</label>
+<input id="name" name="name" placeholder="Digite seu nome completo" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">E-mail</label>
+<input id="email" name="email" placeholder="Digite seu melhor e-mail" required="" type="email"/>
+</div>
+<button class="btn btn-large" type="submit">RECEBER MEU EBOOK</button>
+</form>
+<p class="form-privacy">Seus dados estão 100% seguros. Não compartilhamos suas informações com terceiros e você pode cancelar sua inscrição a qualquer momento.</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+<div class="container footer-links">
+<p>© 2025 Alto Flight - Todos os direitos reservados</p>
+<p>
+<a href="politica.html" target="_blank">Política de Privacidade</a> |
+      <a href="termos.html" target="_blank">Termos de Uso</a> |
+      <a href="#">Contato</a>
+</p>
+</div>
+</footer>
+<!-- Script para o formulário -->
+<script>
         document.getElementById('ebook-form').addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -542,4 +511,3 @@
     </script>
 </body>
 </html>
-
