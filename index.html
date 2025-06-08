@@ -180,44 +180,6 @@
             margin-bottom: 10px;
         }
         
-        /* Depoimentos */
-        .testimonials {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        
-        .testimonial {
-            flex-basis: calc(33.333% - 20px);
-            margin-bottom: 30px;
-            background-color: var(--light);
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-            position: relative;
-        }
-        
-        .testimonial:before {
-            content: '"';
-            font-size: 5rem;
-            color: var(--primary);
-            opacity: 0.2;
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            line-height: 1;
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-        
-        .testimonial-author {
-            font-weight: 700;
-            color: var(--primary);
-        }
-        
         /* FAQ */
         .faq-item {
             margin-bottom: 20px;
@@ -376,6 +338,28 @@ footer {
     margin-top: 2px;
 }
 
+
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 16px;
+        max-width: 90%;
+    }
+
+    .form-container h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .form-container p {
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 0.95rem;
+    }
+}
 </style>
 </head>
 <body>
@@ -405,28 +389,23 @@ footer {
 <p>Este ebook foi criado especialmente para quem sonha em se tornar piloto de avião, mas não sabe por onde começar. Com informações detalhadas e práticas, você terá acesso a todo o conhecimento necessário para iniciar sua jornada nos céus com confiança e clareza.</p>
 <div class="features">
 <div class="feature">
-<h3>Primeiros Passos</h3>
+<div style="display:flex; align-items:center; gap:10px;"><img alt="" src="images/icon-paper-plane.svg" style="width:24px; height:24px;"/><h3>Primeiros Passos</h3></div>
 <p>Descubra exatamente o que você precisa fazer para iniciar sua formação como piloto</p>
 </div>
 <div class="feature">
-<h3>Detalhes do Curso</h3>
+<div style="display:flex; align-items:center; gap:10px;"><img alt="" src="images/icon-paper-plane.svg" style="width:24px; height:24px;"/><h3>Detalhes do Curso</h3></div>
 <p>Entenda como funciona a formação, desde as aulas teóricas até as horas de voo</p>
 </div>
 <div class="feature">
-<h3>Investimento Necessário</h3>
+<div style="display:flex; align-items:center; gap:10px;"><img alt="" src="images/icon-paper-plane.svg" style="width:24px; height:24px;"/><h3>Investimento Necessário</h3></div>
 <p>Conheça os custos reais envolvidos na formação e certificação</p>
 </div>
 <div class="feature">
-<h3>Desafios e Soluções</h3>
+<div style="display:flex; align-items:center; gap:10px;"><img alt="" src="images/icon-paper-plane.svg" style="width:24px; height:24px;"/><h3>Desafios e Soluções</h3></div>
 <p>Saiba quais são os principais obstáculos e como superá-los</p>
 </div>
-<div class="feature">
-<h3>Oportunidades de Mercado</h3>
-<p>Explore as diversas possibilidades de carreira para pilotos no Brasil</p>
 </div>
-</div>
-</div>
-</section>
+</div></section>
 <!-- Autor -->
 <section class="section">
 <div class="container">
@@ -435,7 +414,6 @@ footer {
 </div>
 </section>
 <!-- Depoimentos -->
-
 <!-- FAQ -->
 <section class="section">
 <div class="container">
